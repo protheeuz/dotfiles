@@ -27,7 +27,7 @@ return {
     },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "pyright", "ts_ls", "luau_lsp" },
+ensure_installed = { "lua_ls", "pyright", "ts_ls", "luau_lsp" },
         automatic_enable = { exclude = { "luau_lsp" } },
       })
 

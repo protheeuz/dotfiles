@@ -8,11 +8,12 @@ return {
       "nvim-treesitter/nvim-treesitter-textobjects",
     },
     config = function()
-      require("nvim-treesitter.configs").setup({
+      require("nvim-treesitter.config").setup({
         ensure_installed = {
           "lua", "luau", "python",
           "javascript", "typescript", "tsx",
           "html", "css", "json",
+          "dart",
         },
         auto_install = true,
         highlight = { enable = true },
